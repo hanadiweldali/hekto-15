@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+:root{
+    --primary:#FB2E86;
+    --mainfont:"Lato", sans-serif;
+}
+.btn{
+    border:none;
+    outline: border;
+    color:#fff;
+    padding:16px 40px;
+    border-radius:2px;
+}
+.btn_primary{
+     background-color: var(--primary);
+}
+.btn_success{
+    background-color: #08D15F;
+}
+.row{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+}
+.container{
+  width:calc(100% - 320px);
+  margin: auto;
+}
