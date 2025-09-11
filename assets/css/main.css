@@ -48,6 +48,39 @@ form{
   background-color: var(--primary);
 }
 /* header end */
+/* featured product start */
+.featured-product h2{
+  margin-bottom:30px;
+}
+.featured-product{
+   padding:50px 0;
+}
+.featured-product .row{
+  justify-content: flex-start;
+  gap:15px;
+}
+.featured-product .product{
+ flex:1 0 250px;
+ box-shadow:0px 4px 4px #00000040;
+   border-radius:5px;
+}
+.product .image {
+  background-color: #F6F7FB;
+  padding:30px;
+}
+.product img{
+  height: 200px;
+  width:200px;
+   object-fit: contain;
+}
+.product-details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* featured product end */
 /* newsleter start */
 .newsleter{
   background-image: url(../img/bg_newsleter.webp);
