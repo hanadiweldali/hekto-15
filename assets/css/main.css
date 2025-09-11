@@ -48,6 +48,26 @@ form{
   background-color: var(--primary);
 }
 /* header end */
+/* newsleter start */
+.newsleter{
+  background-image: url(../img/bg_newsleter.webp);
+  padding:175px 0;
+  text-align:center;
+  /* background-attachment:fixed; */
+}
+.newsleter h2{
+  margin-bottom:50px;
+  color: #151875;
+  font-size:35px;
+  
+}
+.shop-btn{
+  transition:all 0.5s;
+}
+.shop-btn:hover{
+  background-color: #151875;
+}
+/* newsleter end */
 /* <clients start */
 .clients{
   padding:50px 0;
