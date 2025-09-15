@@ -82,6 +82,9 @@ ul{
 .flex-start{
      align-items: flex-start;
 }
+.center{
+     justify-content:center;
+}
 .gap-3{
     gap:30px;
 }
