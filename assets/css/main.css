@@ -48,12 +48,69 @@ form{
   background-color: var(--primary);
 }
 /* header end */
+/* hero start */
+.hero{
+  background-color: #F2F0FF;
+  padding: 50px 0;
+}
+.hero .hero-image img{
+  width:100%;
+}
+.hero-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* flex: grow shrink base :) */
+  flex:1 0 60%;
+}
+.hero-image{
+  flex:1 0 30%;
+}
+.hero-content .content-lamp{
+  position: relative;
+  bottom:120px;
+  width:25%;
+  /* background-color: #05E6B7; */
+}
+/* .hero-content .content-text{
+   background-color: purple;
+  padding:40px 0; 
+} */
+.hero-content .content-text p{
+ font-size: 12px;
+ color:#8A8FB9;
+ padding: 4px;
+}
+.hero-content .content-text .para-1{
+ font-size: 12px;
+ color: var(--primary);
+}
+.hero-content .content-text h1{
+ font-size: 30px;
+}
+.hero-content .content-lamp img{
+  width:250px;
+
+}
+@media screen and (max-width:1440px) {
+
+  .hero-content .content-lamp{
+ display: none;
+}
+}
+@media screen and (max-width:900px) {
+  .hero-content,.hero-image{
+    flex: 1 0 100%;
+  }
+}
+/* hero end */
 /* featured product start */
 .featured-product h2{
   margin-bottom:30px;
   color: #1A0B5B;
   font-size:42px;
 }
+
 .featured-product{
    padding:50px 0;
 }
@@ -79,6 +136,7 @@ form{
   gap:16px;
   align-items: center;
   z-index:0;
+ transition: all 0.6s;
   
  
 }
@@ -104,6 +162,7 @@ form{
   right:0;
   margin: auto;
   display:none;
+  transition: all 0.6s;
  
 }
 .product:hover .btn-in-img{
@@ -139,9 +198,11 @@ padding: 10px 20px;
   flex-direction: column;
   gap: 10px;
   padding: 20px;
+  transition: all 0.6s;
 }
 .product-details h3{
   color:var(--primary);
+  transition: all 0.6s;
 }
 .featured-product .product-info{
   display: flex;
@@ -154,7 +215,9 @@ padding: 10px 20px;
   width:20px;
   height: 6px;
   border-radius:10px;
- 
+  border: none;
+  outline: none;
+ cursor: pointer;
 }
 .color-one{
   background-color: #05E6B7;
@@ -164,6 +227,7 @@ padding: 10px 20px;
 }
 .color-three{
   background-color: #00009D;
+ transition: all 0.6s;
 }
 /* featured product end */
 /* newsleter start */

@@ -65,8 +65,10 @@ ul{
 .display-flex{
     display: flex;
 }
+
 .flex-column{
  flex-direction: column;
+
 }
 .items-contain-gap{
   gap:23px;
@@ -76,4 +78,10 @@ ul{
 }
 .text-center{
     text-align: center;
+}
+.flex-start{
+     align-items: flex-start;
+}
+.gap-3{
+    gap:30px;
 }
