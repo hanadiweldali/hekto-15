@@ -60,7 +60,7 @@ form{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* flex: grow shrink base :) */
+  /* flex: grow shrink basis :) */
   flex:1 0 60%;
 }
 .hero-image{
@@ -350,6 +350,42 @@ padding: 10px 20px;
 
 }
 /* Leatest Products end */
+/* shopex offer start */
+.Shopex-Offer{
+  padding: 50px 0;
+}
+.Shopex-Offer h2{
+ margin-bottom: 30px;
+ color: #1A0B5B;
+ font-size: 40px;
+}
+.Shopex-Offer  .offer{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+padding:40px 50px;
+
+box-shadow:0px 4px 4px #1a0b5b2c;
+font-size: 15px;
+
+}
+.Shopex-Offer .row {
+ gap:28px;
+}
+.Shopex-Offer .offer {
+ width:300px;
+ height:300px;
+ object-fit: contain;
+}
+
+ .offer p{
+  color:#1a0b5b3f;
+}
+.Shopex-Offer .offer {
+  flex:1 0 250px;
+  
+}
+/* shopex end */
 /* newsleter start */
 .newsleter{
   background-image: url(../img/bg_newsleter.webp);
