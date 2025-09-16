@@ -254,20 +254,21 @@ padding: 10px 20px;
   padding:50px 0;
 }
 .Leatest-Products h2{
-  margin-bottom: 19px;
   color: #151875;
   font-size: 35px;
   font-weight: 600;
  
 }
 .list-in-Leatest-Products{
-  gap:60px;
+  gap:80px;
   color: #151875;
+  padding: 31px 0px;
 }
 .product_leatest .image img{
  width:300px;
  height:300px;
-   object-fit: contain;
+ object-fit: contain;
+ transition: all 0.6s;
 }
 .list-in-Leatest-Products li:hover{
   color: var(--primary);
@@ -297,17 +298,49 @@ padding: 10px 20px;
   color:#FB2448;
    text-decoration: line-through;
 }
-/* .product_leatest{
-  background-color: yellow;
-} */
+.product_leatest{
+  /* background-color: yellow; */
+  position: relative;
+}
 .product_leatest .image {
   background-color:#F7F7F7;
-  /* padding:50px; */
-   margin-top: 60px;
+  transition: all 0.6s;
+
+}
+.product_leatest:hover .image {
+  background-color: #fff;
+}
+.product_leatest:hover .image img {
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.585));
 }
 .Leatest-Products .row{
   justify-content: flex-start;
   gap:37px;
+}
+.product_leatest .icon-in-img{
+ display: none;
+ transition: all 0.6s;
+}
+.product_leatest:hover  .icon-in-img{
+   position: absolute;
+  padding:10px;
+  display:flex;
+  gap:16px;
+  align-items: center;
+  flex-direction: column;
+  bottom:80px;
+
+}
+.product_leatest .sale{
+ display: none;
+ transition: all 0.6s;
+}
+.product_leatest:hover  .sale{
+   position: absolute;
+  display:flex;
+  gap:16px;
+  align-items: center;
+
 }
 .product-leatest-details{
   display: flex;
