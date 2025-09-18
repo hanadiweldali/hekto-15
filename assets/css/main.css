@@ -23,9 +23,10 @@ body {
   }
 }
 .header .list a {
+  /* color: yellow; */
   color: #0d0e43;
 }
-.header .list .active {
+.header .list .lis-item:hover a {
   color: var(--primary);
 }
 form{
@@ -164,6 +165,47 @@ form{
 .icon-in-img icon-1{
   width:30px;
  height:30px;
+}
+.icon-in-img i{
+  color: #00C6FF;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+   width: 30px;
+    height: 30px;
+}
+.icon-1:hover .icon-11{
+   color: #2F2EFF;
+    border-radius: 50%;
+    background-color: #F0F2FF;
+    width: 30px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* الظل الناعم */
+  height: 30px;
+}
+.icon-2:hover .icon-22{
+   color: #2F2EFF;
+    border-radius: 50%;
+    background-color: #F0F2FF;
+    width: 30px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* الظل الناعم */
+  height: 30px;
+}
+.icon-3:hover .icon-33{
+   color: #2F2EFF;
+    border-radius: 50%;
+    background-color: #F0F2FF;
+    width: 30px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* الظل الناعم */
+  height: 30px;
 }
 .icon-in-img icon-2{
   width:17px;
