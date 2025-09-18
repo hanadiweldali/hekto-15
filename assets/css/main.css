@@ -162,9 +162,16 @@ form{
 .product:hover .icon-in-img{
   z-index:1;
 }
+.icon-in-img button{
+  outline: none;
+  border: none ;
+  box-shadow: none; 
+  background-color:#F7F7F7;;
+}
 .icon-in-img icon-1{
   width:30px;
  height:30px;
+ outline: none;
 }
 .icon-in-img i{
   color: #00C6FF;
@@ -174,7 +181,18 @@ form{
    width: 30px;
     height: 30px;
 }
-.icon-1:hover .icon-11{
+.icon-1:focus .icon-11{
+   color: #2F2EFF;
+    border-radius: 50%;
+    background-color: #F0F2FF;
+    width: 30px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.103); /* الظل الناعم */
+  height: 30px;
+}
+.icon-2:focus .icon-22{
    color: #2F2EFF;
     border-radius: 50%;
     background-color: #F0F2FF;
@@ -185,18 +203,7 @@ form{
   box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* الظل الناعم */
   height: 30px;
 }
-.icon-2:hover .icon-22{
-   color: #2F2EFF;
-    border-radius: 50%;
-    background-color: #F0F2FF;
-    width: 30px;
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* الظل الناعم */
-  height: 30px;
-}
-.icon-3:hover .icon-33{
+.icon-3:focus .icon-33{
    color: #2F2EFF;
     border-radius: 50%;
     background-color: #F0F2FF;
@@ -346,8 +353,12 @@ padding: 10px 20px;
 }
 .product_leatest .image {
   background-color:#F7F7F7;
-  transition: all 0.6s;
+ 
 
+}
+
+.product_leatest:hover button{
+  background-color: #fff;
 }
 .product_leatest:hover .image {
   background-color: #fff;
@@ -449,10 +460,6 @@ font-size: 15px;
   justify-content: center;
   gap:20px;
 }
-.Shopex-Offer .offer {
-  flex:1 0 250px;
-  
-}
 .trend-product .image-trend{
   background-color: #F5F6F8;
   padding:30px;
@@ -476,6 +483,101 @@ font-size: 15px;
   text-decoration: line-through;
 }
 /* Trending Products emd */
+/* Top Categories starr */
+.top-categories{
+  padding: 50px 0;
+}
+.top-categories h2{
+  color: #0d0e43;
+  font-size: 40px;
+ margin-bottom: 55px;
+}
+
+
+.details-choice{
+  padding:27px 0;
+}
+.details-choice h3{
+  padding-bottom:13px;
+  color: #0d0e43;
+}
+.details-choice span{
+
+  color: #0d0e43;
+}
+
+.btn-in-img-choice{
+  position:absolute;
+ bottom: 20px; 
+  left: 0;
+  right:0;
+  margin: auto;
+  display:none;
+  transition: all 0.6s;
+  z-index: 3;
+ 
+}
+.btn-choice-pro{
+  padding:6px 12px;
+  font-size:12px;
+}
+.choice img{
+  width:200px;
+ height:200px;
+   object-fit: contain;
+   z-index:2;
+   position: relative;
+   display: block;
+}
+.image-choice{
+  border-radius: 50%;
+ padding: 30px;
+  position: relative;
+}
+.image-choice::after{
+  content: '';
+background-color: #F6F7FB;
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
+}
+.choice:hover .image-choice::before{
+  content:'';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #6a00ff;
+  position: absolute;
+ bottom: -6px;
+    right: 7px;
+  z-index: 0;
+
+}
+.choice:hover .btn-in-img-choice{
+ display: block;
+}
+.top-categories .row{
+flex-wrap: nowrap;
+gap:40px;
+overflow-x:auto;
+justify-content:space-evenly;
+
+}
+
+@media screen and (max-width:900px) {
+  .top-categories .choice{
+  width:100%;
+}
+}
+
+
+
+
+/* Top Categories end */
 /* newsleter start */
 .newsleter{
   background-image: url(../img/bg_newsleter.webp);
@@ -506,9 +608,9 @@ gap:15px;
 overflow-x:auto;
 
 }
-.clients .logo{
+/* .clients .logo{
   width:calc((100% - 120px )/9);
-}
+} */
 
 .clients img{
   width:150px;
